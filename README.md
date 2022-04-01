@@ -15,7 +15,11 @@ Essentially, most keyboard shortcuts are going to be used for a variety of appli
 So, why don't we use another key? Well, most operating systems and keyboard firmwares do not treat other keys in a way that you would modifiers - i.e.:
 
 * the key does nothing on its own
-* [ pressing it down, _then_ pressing and releasing another key, _then_ releasing it ] is the expected modus operandi
+* the expected modus operandi is:
+  1. pressing down the 'makeshift modifier key'
+  2. pressing some other key
+  3. releasing that other key
+  4. releasing the 'makeshift modifier key'
 * the key is expected to exist on a normal keyboard
 
 In that vein, Taran created a 2nd Keyboard Script for the QMK firmware that basically pre-pends a key-down event for a specified key (F22 for him, F24 for me) and post-pends a key-up event of that same specified key.
